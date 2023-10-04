@@ -1,0 +1,40 @@
+* {
+    padding: 3px;
+    margin: 3px;
+}
+
+body {
+    margin-top: 30px;
+    font-family: Helvetica, Arial, sans-serif;
+    text-align: center;
+}
+h1 {
+    font-size: larger;
+}
+p {
+    font: 0.9em;
+}
+.grad {
+    background-color: #9198e5;
+    background: radial-gradient(#db64e6, #9198e5);
+    background-attachment: fixed;
+    opacity: 0.7;
+    color: rgb(80, 43, 226);
+}
+.cnt {
+    min-height: 200px;
+    max-height: 75vh;
+    aspect-ratio: 16 / 9;
+    margin: auto;
+    border: blue 1px solid;
+    background-image: linear-gradient(rgba(0, 0, 255, 0.6), rgba(255, 255, 0, 0.3)), url(pic.png), linear-gradient(rgba(0, 0, 255, 1), rgba(255, 255, 0, 0.5));
+}
+
+@media (min-aspect-ratio: 16/12) {
+    h1 {
+        font-size: 1.8em;
+    }
+    p {
+        font-size: 1.2rem;
+    }
+}
